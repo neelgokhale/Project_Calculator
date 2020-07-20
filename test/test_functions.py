@@ -35,3 +35,10 @@ def test_divide():
     assert f.divide(-2, 2) == -1
     assert f.divide(-5, -2) == 2.5
     assert f.divide(2, 5, in_order=False) == 2.5
+
+
+def test_power():
+    assert f.power(1, 1) == 1
+    assert f.power(5, 2) == 25
+    assert f.power(2, -2) == 0.25
+    assert f.power(-2, 2) == 4
