@@ -22,6 +22,7 @@ while run:
         - For subtraction, press S
         - For multiplications, press M
         - For division, press D
+        - For power function, press P
         - To quit, press X
         """
     )
@@ -44,6 +45,9 @@ while run:
     elif op == 'd':
         in_order = bool(int(input(">> Enter 1 -> num1 / num2 OR Enter 0 -> num2 / num1")))
         print("> The answer is: ", f.divide(num1, num2, in_order=in_order))
+
+    elif op == 'p':
+        print("> The answer is: ", f.power(num1, num2))
 
     else:
         print("> Invalid entry, try again...")

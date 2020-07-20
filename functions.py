@@ -54,3 +54,13 @@ def divide(num1: float, num2: float, in_order: bool = True) -> float:
     if in_order:
         return num1 / num2
     return num2 / num1
+
+
+def power(num: float, pwr: float) -> float:
+    """
+    Performs a power operation on a number
+    :param num: base number
+    :param pwr: exponent
+    :return: resulting power of number
+    """
+    return num ** pwr
